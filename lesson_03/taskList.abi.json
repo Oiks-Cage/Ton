@@ -1,0 +1,90 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "add",
+			"inputs": [
+				{"name":"name","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "renderTaskKol",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint8"}
+			]
+		},
+		{
+			"name": "renderList",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"flag","type":"bool"}],"name":"value0","type":"map(uint8,tuple)"}
+			]
+		},
+		{
+			"name": "takeName",
+			"inputs": [
+				{"name":"n","type":"uint8"}
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "delit",
+			"inputs": [
+				{"name":"n","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "chek",
+			"inputs": [
+				{"name":"n","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "list",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"flag","type":"bool"}],"name":"list","type":"map(uint8,tuple)"}
+			]
+		},
+		{
+			"name": "i",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"i","type":"uint8"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"flag","type":"bool"}],"name":"list","type":"map(uint8,tuple)"},
+		{"name":"i","type":"uint8"}
+	]
+}
