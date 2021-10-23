@@ -1,0 +1,55 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createAnimals",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"maxAge","type":"uint256"},
+				{"name":"class","type":"string"},
+				{"name":"inRedBook","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createAnimalPrice",
+			"inputs": [
+				{"name":"animalId","type":"uint256"},
+				{"name":"animalPrice","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAnimalPrice",
+			"inputs": [
+				{"name":"animalId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"price","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"maxAge","type":"uint256"},{"name":"class","type":"string"},{"name":"inRebBook","type":"bool"}],"name":"animalsArr","type":"tuple[]"},
+		{"name":"animalAndOwner","type":"map(uint256,uint256)"},
+		{"name":"animalsPrice","type":"map(uint256,uint256)"}
+	]
+}
