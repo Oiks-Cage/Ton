@@ -16,13 +16,13 @@ contract SampleToken {
 
     modifier chekAnimalsOwner (uint animalId) {
         require(animalAndOwner[animalId] == msg.pubkey());
-        tvm.accept();
+        tvm.accept();   
         _;
     }
 
     modifier chekAnimalsName (string name) {
         for (uint256 i = 0; i < animalsArr.length; i++) {
-            require(animalsArr[i].name != name);    
+            require(animalsArr[i].name != name);
         }
         tvm.accept();
         _;

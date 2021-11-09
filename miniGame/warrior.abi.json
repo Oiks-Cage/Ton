@@ -1,0 +1,66 @@
+{
+	"ABI version": 2,
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"_address","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttack",
+			"inputs": [
+				{"name":"damage","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"target","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getHP",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_helth","type":"int256"}
+			]
+		},
+		{
+			"name": "regUnit",
+			"inputs": [
+				{"name":"helth","type":"int256"},
+				{"name":"power","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "delitUnit",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getInfo",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"helth","type":"int256"},{"name":"power","type":"int256"}],"name":"_unitAndOwner","type":"map(address,tuple)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
