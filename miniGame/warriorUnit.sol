@@ -22,8 +22,8 @@ contract warriorUnit {
         delete unitAndOwner[msg.sender];
     }
     
-    function getInfo() external virtual returns (mapping (address=>unit) _unitAndOwner){
+    function getInfo() public virtual returns (mapping (address=>unit) _unitAndOwner){
         _unitAndOwner = unitAndOwner;
     }
-
+    
 }

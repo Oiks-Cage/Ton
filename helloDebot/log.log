@@ -1,0 +1,17 @@
+Config: default
+Input arguments:
+     tvc: helloDebot.tvc
+      wc: None
+    keys: helloDebot.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "enjoy habit coin design monkey work fossil title credit shoot laptop chief"
+Raw address: 0:368b404ecfe6f7f29d780db3d569bf0c8e3659070dda79a94a76363a01fa4287
+testnet:
+Non-bounceable address (for init): 0QA2i0BOz-b38p14DbPVab8MjjZZBw3aealKdjY6AfpChxaG
+Bounceable address (for later access): kQA2i0BOz-b38p14DbPVab8MjjZZBw3aealKdjY6AfpCh0tD
+mainnet:
+Non-bounceable address (for init): UQA2i0BOz-b38p14DbPVab8MjjZZBw3aealKdjY6AfpCh60M
+Bounceable address (for later access): EQA2i0BOz-b38p14DbPVab8MjjZZBw3aealKdjY6AfpCh_DJ
+Succeeded

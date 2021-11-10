@@ -18,7 +18,7 @@ contract archer is warriorUnit, gameInterface {
         warriorUnit(allWarriorUnitAddress).regUnit(helth, power);
     }
 
-    function getAttack (int damage) external override {
+    function getAttack (int damage) external override{
         tvm.accept();
         helth = helth - damage;
         if (helth <= 0) {
@@ -27,11 +27,11 @@ contract archer is warriorUnit, gameInterface {
         }
         else {
             warriorUnit(allWarriorUnitAddress).regUnit(helth, power);
-            this.attack(msg.sender);
+            attack(msg.sender);
         }
     }
 
-    function attack (address target) public {
+    function attack (address target) internal {
         tvm.accept();
         gameInterface(target).getAttack(power);
     }

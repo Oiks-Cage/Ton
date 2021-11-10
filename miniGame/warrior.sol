@@ -27,11 +27,11 @@ contract warrior is warriorUnit, gameInterface {
         }
         else {
             warriorUnit(allWarriorUnitAddress).regUnit(helth, power);
-            this.attack(msg.sender);
+            attack(msg.sender);
         }
     }
 
-    function attack (address target) public {
+    function attack (address target) internal {
         tvm.accept();
         gameInterface(target).getAttack(power);
     }

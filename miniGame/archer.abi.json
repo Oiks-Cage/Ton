@@ -19,19 +19,10 @@
 			]
 		},
 		{
-			"name": "attack",
-			"inputs": [
-				{"name":"target","type":"address"}
-			],
-			"outputs": [
-			]
-		},
-		{
-			"name": "getHP",
+			"name": "getInf",
 			"inputs": [
 			],
 			"outputs": [
-				{"name":"_helth","type":"int256"}
 			]
 		},
 		{
