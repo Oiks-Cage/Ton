@@ -1,0 +1,18 @@
+Config: default
+Input arguments:
+     tvc: todoDebot.tvc
+      wc: None
+    keys: todoDebot.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "glare child below traffic measure cup castle someone spray adapt whip conduct"
+Raw address: 0:a6753f7e1b16c0b457fafb5d8c1631bc0a33c2926017fe444a8819c34e8e6c72
+testnet:
+Non-bounceable address (for init): 0QCmdT9-GxbAtFf6-12MFjG8CjPCkmAX_kRKiBnDTo5scnGv
+Bounceable address (for later access): kQCmdT9-GxbAtFf6-12MFjG8CjPCkmAX_kRKiBnDTo5scixq
+mainnet:
+Non-bounceable address (for init): UQCmdT9-GxbAtFf6-12MFjG8CjPCkmAX_kRKiBnDTo5scsol
+Bounceable address (for later access): EQCmdT9-GxbAtFf6-12MFjG8CjPCkmAX_kRKiBnDTo5scpfg
+Succeeded
+

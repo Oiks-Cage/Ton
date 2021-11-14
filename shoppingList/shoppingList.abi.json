@@ -1,0 +1,63 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"pubkey","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getShoppListAndSummary",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"id","type":"uint32"},{"name":"name","type":"string"},{"name":"amount","type":"uint32"},{"name":"createdAt","type":"uint64"},{"name":"buyed","type":"bool"},{"name":"price","type":"uint256"}],"name":"_shoppList","type":"map(uint256,tuple)"},
+				{"components":[{"name":"completedPurchases","type":"uint32"},{"name":"incompletedPurchases","type":"uint32"},{"name":"totalPrice","type":"uint256"}],"name":"_summary","type":"tuple"}
+			]
+		},
+		{
+			"name": "addPurchase",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"amount","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deletePurchase",
+			"inputs": [
+				{"name":"id","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "buyPurchase",
+			"inputs": [
+				{"name":"id","type":"uint32"},
+				{"name":"price","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"ownerPubkey","type":"uint256"},
+		{"name":"count","type":"uint32"},
+		{"components":[{"name":"id","type":"uint32"},{"name":"name","type":"string"},{"name":"amount","type":"uint32"},{"name":"createdAt","type":"uint64"},{"name":"buyed","type":"bool"},{"name":"price","type":"uint256"}],"name":"shoppList","type":"map(uint256,tuple)"},
+		{"components":[{"name":"completedPurchases","type":"uint32"},{"name":"incompletedPurchases","type":"uint32"},{"name":"totalPrice","type":"uint256"}],"name":"summary","type":"tuple"}
+	]
+}
